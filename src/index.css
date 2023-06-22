@@ -32,3 +32,13 @@ body {
 .roundedBtn:hover {
   border: 1px solid var(--TextColor);
 }
+
+.skills {
+  border: 1px solid var(--TextColor);
+  @apply rounded-full;
+}
+.skills:hover {
+  background-color: var(--purple-color);
+  border: none;
+  font-weight: bold;
+}
