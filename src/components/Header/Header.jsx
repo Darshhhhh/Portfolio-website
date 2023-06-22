@@ -53,10 +53,10 @@ function Header() {
               }
               alt="Brand-Logo"
             />
-            <h1 className="text-3xl font-extrabold max-sm:hidden max-md:hidden">
-              <span className="purple-text me-1 text-4xl">.</span>darsh
-            </h1>
           </Link>
+          <h1 className="text-3xl font-extrabold max-sm:hidden max-md:hidden">
+            <span className="purple-text me-1 text-4xl">.</span>darsh
+          </h1>
         </motion.div>
         <div className="flex lg:hidden">
           <button
@@ -88,13 +88,14 @@ function Header() {
           >
             <SocialIcon
               network="linkedin"
+              fgColor="currentColor"
               bgColor="transparent"
-              fgColor={
+              className={
                 ThemeSelected === null
-                  ? "#f5f5f5"
+                  ? "text-[#f5f5f5] hover:text-[#a829f1]"
                   : ThemeSelected === "Light"
-                  ? "#141414"
-                  : "#f5f5f5"
+                  ? "text-[#141414] hover:text-[#a829f1]"
+                  : "text-[#f5f5f5] hover:text-[#a829f1]"
               }
             />
           </Link>
@@ -104,13 +105,14 @@ function Header() {
           >
             <SocialIcon
               network="github"
+              fgColor="currentColor"
               bgColor="transparent"
-              fgColor={
+              className={
                 ThemeSelected === null
-                  ? "#f5f5f5"
+                  ? "text-[#f5f5f5] hover:text-[#a829f1]"
                   : ThemeSelected === "Light"
-                  ? "#141414"
-                  : "#f5f5f5"
+                  ? "text-[#141414] hover:text-[#a829f1]"
+                  : "text-[#f5f5f5] hover:text-[#a829f1]"
               }
             />
           </Link>
@@ -120,13 +122,14 @@ function Header() {
           >
             <SocialIcon
               network="email"
+              fgColor="currentColor"
               bgColor="transparent"
-              fgColor={
+              className={
                 ThemeSelected === null
-                  ? "#f5f5f5"
+                  ? "text-[#f5f5f5] hover:text-[#a829f1]"
                   : ThemeSelected === "Light"
-                  ? "#141414"
-                  : "#f5f5f5"
+                  ? "text-[#141414] hover:text-[#a829f1]"
+                  : "text-[#f5f5f5] hover:text-[#a829f1]"
               }
             />
           </Link>

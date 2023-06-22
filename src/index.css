@@ -13,7 +13,10 @@ body {
   color: var(--TextColor);
   font-family: "Poppins", sans-serif;
 }
-
+.iconHover {
+  background-color: transparent;
+  color: var(--TextColor);
+}
 .purple-text {
   color: var(--purple-color);
 }
