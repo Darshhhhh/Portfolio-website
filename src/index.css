@@ -24,3 +24,11 @@ body {
 .headerMainBox {
   border-bottom: 1px solid #5f5f5fb9;
 }
+
+.roundedBtn {
+  border: 1px solid var(--purple-color);
+  @apply rounded-full;
+}
+.roundedBtn:hover {
+  border: 1px solid var(--TextColor);
+}
