@@ -4,9 +4,11 @@ export default function ChnageTheme(Theme) {
   const themeMap = {
     Dark: {
       "--TextColor": "#FFFFFF",
+      "--MainBackgroundColor": "#141414",
     },
     Light: {
       "--TextColor": "#000000",
+      "--MainBackgroundColor": "#f5f5f5",
     },
   };
 
