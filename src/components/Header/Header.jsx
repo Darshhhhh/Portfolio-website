@@ -55,7 +55,7 @@ function Header() {
             />
           </Link>
           <h1 className="text-3xl font-extrabold max-sm:hidden max-md:hidden">
-            <span className="purple-text me-1 text-4xl">.</span>darsh
+            <span className="purple-text me-1 text-4xl">/</span>darsh
           </h1>
         </motion.div>
         <div className="flex lg:hidden">

@@ -19,7 +19,7 @@ function About() {
   };
   return (
     <>
-      <div className="mx-auto max-w-[100rem] pt-44 md:pt-56 lg:pt-64 px-10">
+      <div className="mx-auto max-w-[100rem] pt-44 md:pt-56 lg:pt-64 px-10 h-[100vh]">
         <motion.h1
           initial={{
             opacity: 0,
