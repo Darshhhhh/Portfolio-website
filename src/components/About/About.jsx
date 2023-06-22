@@ -1,10 +1,21 @@
 import { motion } from "framer-motion";
+import Resume from "../../assets/Darsh_Shah_Resume.pdf";
 
 function About() {
   const SendEmail = () => {
     var subject = "Let's Connect!";
     var body = "Hello,I'm [Your Name]!,would love to have chat with you!";
     window.location.href = `mailto:contact.shahdarsh@gmail.com?subject=${subject}&body=${body}`;
+  };
+
+  const dowloadResume = () => {
+    var url = Resume;
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = url.split("/").pop();
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
   };
   return (
     <>
@@ -59,7 +70,10 @@ function About() {
           >
             Contact Me
           </button>
-          <button className="uppercase flex gap-2 align-middle items-center ">
+          <button
+            className="uppercase flex gap-2 align-middle items-center"
+            onClick={() => dowloadResume()}
+          >
             <i>Download Resume</i>
             <svg
               xmlns="http://www.w3.org/2000/svg"
