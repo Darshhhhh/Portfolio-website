@@ -19,32 +19,26 @@ function About() {
   };
   return (
     <>
-      <div className="mx-auto max-w-[100rem] pt-44 md:pt-56 lg:pt-64 px-10 h-[100vh]">
+      <div className="relative mx-auto max-w-[100rem] pt-44 md:pt-56 lg:pt-64 px-10 h-[100vh]">
         <motion.h1
-          initial={{
-            opacity: 0,
-          }}
-          animate={{
-            opacity: 1,
-          }}
-          transition={{
-            duration: 2,
-            ease: "linear",
+          initial="hidden"
+          whileInView="visible"
+          transition={{ duration: 1, ease: "linear" }}
+          variants={{
+            visible: { opacity: 1 },
+            hidden: { opacity: 0 },
           }}
           className="text-5xl font-bold md:text-5xl lg:text-9xl "
         >
           The Frontend <span className="purple-text">Wizard</span>.
         </motion.h1>
         <motion.p
-          initial={{
-            opacity: 0,
-          }}
-          animate={{
-            opacity: 1,
-          }}
-          transition={{
-            duration: 1,
-            ease: "linear",
+          initial="hidden"
+          whileInView="visible"
+          transition={{ duration: 1, ease: "linear" }}
+          variants={{
+            visible: { opacity: 1 },
+            hidden: { opacity: 0 },
           }}
           className="text-base md:text-xl lg:text-2xl max-w-[100rem] mt-3 font-light"
         >
@@ -52,17 +46,14 @@ function About() {
           experiences with a touch of code sorcer✨.
         </motion.p>
         <motion.div
-          initial={{
-            opacity: 0,
+          initial="hidden"
+          whileInView="visible"
+          transition={{ duration: 1, ease: "linear" }}
+          variants={{
+            visible: { opacity: 1 },
+            hidden: { opacity: 0 },
           }}
-          animate={{
-            opacity: 1,
-          }}
-          transition={{
-            duration: 1,
-            ease: "linear",
-          }}
-          className="mt-6 flex gap-10 text-xs md:text-xl lg:text-xl font-semibold "
+          className="mt-6 flex gap-10 text-xs md:text-xl lg:text-xl font-semibold"
         >
           <button
             className="roundedBtn uppercase py-2 px-3 md:px-10 md:py-5 lg:px-12 lg:py-5"

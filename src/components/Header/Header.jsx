@@ -28,16 +28,12 @@ function Header() {
         aria-label="Global"
       >
         <motion.div
-          initial={{
-            x: -150,
-            opacity: 0,
-          }}
-          animate={{
-            x: 0,
-            opacity: 1,
-          }}
-          transition={{
-            duration: 1,
+          initial="hidden"
+          whileInView="visible"
+          transition={{ duration: 1, ease: "linear" }}
+          variants={{
+            visible: { opacity: 1, x: 0 },
+            hidden: { opacity: 0, x: -150 },
           }}
           className="flex lg:flex-1"
         >
@@ -69,16 +65,12 @@ function Header() {
           </button>
         </div>
         <motion.div
-          initial={{
-            x: 150,
-            opacity: 0,
-          }}
-          animate={{
-            x: 0,
-            opacity: 1,
-          }}
-          transition={{
-            duration: 1,
+          initial="hidden"
+          whileInView="visible"
+          transition={{ duration: 1, ease: "linear" }}
+          variants={{
+            visible: { opacity: 1, x: 0 },
+            hidden: { opacity: 0, x: 150 },
           }}
           className="hidden lg:flex lg:gap-x-5"
         >

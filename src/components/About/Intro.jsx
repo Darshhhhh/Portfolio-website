@@ -1,28 +1,49 @@
 import { Link } from "react-router-dom";
 import myImage from "../../assets/My Photo.jpg";
 import { SocialIcon } from "react-social-icons";
+import { motion } from "framer-motion";
 function Intro() {
   const ThemeSelected = sessionStorage.getItem("CurrentTheme");
   const Skills = [
-    "HTML",
-    "CSS",
-    "Javascript",
-    "React",
-    "MongoDB",
-    "Express",
-    "NodeJs",
-    "Redux-toolkit",
-    "Figma",
-    "User Interface Design",
-    "After Effects",
+    { name: "HTML", lvl: 4.5 },
+    { name: "CSS", lvl: 4 },
+    { name: "Tailwind", lvl: 4 },
+    { name: "Javascript", lvl: 4 },
+    { name: "React", lvl: 4 },
+    { name: "Redux-toolkit", lvl: 4 },
+    { name: "Figma", lvl: 4 },
+    { name: "MongoDB", lvl: 2 },
+    { name: "Express", lvl: 2 },
+    { name: "NodeJs", lvl: 2 },
+    { name: "User Interface Design", lvl: 3.5 },
+    { name: "After Effects", lvl: 4.5 },
   ];
+
   return (
     <>
       <div className="mx-auto max-w-[100rem] pt-10 md:pt-10 lg:pt-20 px-10 h-[100vh]">
-        <h1 className="text-4xl font-bold">
+        <motion.h1
+          initial="hidden"
+          whileInView="visible"
+          transition={{ duration: 1 }}
+          variants={{
+            visible: { opacity: 1, x: 0 },
+            hidden: { opacity: 0, x: -150 },
+          }}
+          className="text-4xl font-bold"
+        >
           <span className="purple-text">/</span>about
-        </h1>
-        <div className="mt-10 flex gap-12 items-center">
+        </motion.h1>
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          transition={{ duration: 1, ease: "linear" }}
+          variants={{
+            visible: { opacity: 1 },
+            hidden: { opacity: 0 },
+          }}
+          className="mt-10 flex gap-12 items-center"
+        >
           <img src={myImage} className="w-28 rounded-full filter grayscale" />
           <div className="flex gap-2">
             <Link
@@ -79,8 +100,17 @@ function Intro() {
               />
             </Link>
           </div>
-        </div>
-        <div className="my-10 text-2xl">
+        </motion.div>
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          transition={{ duration: 2, ease: "linear" }}
+          variants={{
+            visible: { opacity: 1 },
+            hidden: { opacity: 0 },
+          }}
+          className="my-10 text-2xl"
+        >
           <p>
             I&apos;m <span className="purple-text">Darsh Shah</span>,
             23-year-old frontend developer from India, holding a bachelor&apos;s
@@ -96,16 +126,49 @@ function Intro() {
             deliver visually stunning and user-friendly designs, combined with
             my eagerness to learn, make me a valuable asset to any team.
           </p>
-        </div>
+        </motion.div>
         <div className="mt-5">
-          <h1 className="text-4xl font-bold">
+          <motion.h1
+            initial="hidden"
+            whileInView="visible"
+            transition={{ duration: 1.3, ease: "linear" }}
+            variants={{
+              visible: { opacity: 1, x: 0 },
+              hidden: { opacity: 0, x: -150 },
+            }}
+            className="text-4xl font-bold"
+          >
             <span className="purple-text">/</span>skills
-          </h1>
-          <div className="flex flex-wrap gap-6 mt-10">
+          </motion.h1>
+          <div className="flex flex-wrap gap-6 mt-10 lg:max-w-[60%] justify-center lg:justify-start md:justify-start">
             {Skills.map((data, index) => (
-              <button key={index} className="skills px-10 py-3.5">
-                {data}
-              </button>
+              <>
+                <motion.button
+                  initial="hidden"
+                  whileInView="visible"
+                  transition={{ duration: `1.${index}`, ease: "linear" }}
+                  variants={{
+                    visible: { opacity: 1, x: 0 },
+                    hidden: { opacity: 0, x: -150 },
+                  }}
+                  key={index}
+                  className="skills px-10 py-3.5 hover:px-16"
+                  name="skillBtn"
+                  value=""
+                  onMouseOver={() =>
+                    (document.getElementsByName("skillBtn")[
+                      index
+                    ].innerHTML = `${data.lvl}/5`)
+                  }
+                  onMouseLeave={() =>
+                    (document.getElementsByName("skillBtn")[
+                      index
+                    ].innerHTML = `${data.name}`)
+                  }
+                >
+                  {data.name}
+                </motion.button>
+              </>
             ))}
           </div>
         </div>
