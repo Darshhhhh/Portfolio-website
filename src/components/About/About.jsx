@@ -1,16 +1,62 @@
+import { motion } from "framer-motion";
+
 function About() {
+  const SendEmail = () => {
+    var subject = "Let's Connect!";
+    var body = "Hello,I'm [Your Name]!,would love to have chat with you!";
+    window.location.href = `mailto:contact.shahdarsh@gmail.com?subject=${subject}&body=${body}`;
+  };
   return (
     <>
       <div className="mx-auto max-w-[100rem] pt-44 md:pt-56 lg:pt-64 px-10">
-        <h1 className="text-5xl font-bold md:text-5xl lg:text-9xl ">
+        <motion.h1
+          initial={{
+            opacity: 0,
+          }}
+          animate={{
+            opacity: 1,
+          }}
+          transition={{
+            duration: 2,
+            ease: "linear",
+          }}
+          className="text-5xl font-bold md:text-5xl lg:text-9xl "
+        >
           The Frontend <span className="purple-text">Wizard</span>.
-        </h1>
-        <p className="text-base md:text-xl lg:text-2xl max-w-[100rem] mt-3 font-light">
+        </motion.h1>
+        <motion.p
+          initial={{
+            opacity: 0,
+          }}
+          animate={{
+            opacity: 1,
+          }}
+          transition={{
+            duration: 1,
+            ease: "linear",
+          }}
+          className="text-base md:text-xl lg:text-2xl max-w-[100rem] mt-3 font-light"
+        >
           who brewing pixel-perfect spells and conjuring captivating user
           experiences with a touch of code sorcer✨.
-        </p>
-        <div className="mt-6 flex gap-10 text-xs md:text-xl lg:text-xl font-semibold ">
-          <button className="roundedBtn uppercase py-2 px-3 md:px-10 md:py-5 lg:px-12 lg:py-5">
+        </motion.p>
+        <motion.div
+          initial={{
+            opacity: 0,
+          }}
+          animate={{
+            opacity: 1,
+          }}
+          transition={{
+            duration: 1,
+            ease: "linear",
+          }}
+          className="mt-6 flex gap-10 text-xs md:text-xl lg:text-xl font-semibold "
+        >
+          <button
+            className="roundedBtn uppercase py-2 px-3 md:px-10 md:py-5 lg:px-12 lg:py-5"
+            onClick={() => SendEmail()}
+          >
             Contact Me
           </button>
           <button className="uppercase flex gap-2 align-middle items-center ">
@@ -28,7 +74,7 @@ function About() {
               />
             </svg>
           </button>
-        </div>
+        </motion.div>
       </div>
     </>
   );
