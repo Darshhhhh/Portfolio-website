@@ -152,7 +152,7 @@ function Intro() {
                     hidden: { opacity: 0, x: -150 },
                   }}
                   key={index}
-                  className="skills px-10 py-3.5 hover:px-16"
+                  className="skills px-10 py-3.5 hover:px-16 hover:text-white"
                   name="skillBtn"
                   value=""
                   onMouseOver={() =>
