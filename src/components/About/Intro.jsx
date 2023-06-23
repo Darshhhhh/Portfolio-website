@@ -15,6 +15,7 @@ function Intro() {
     { name: "MongoDB", lvl: 2 },
     { name: "Express", lvl: 2 },
     { name: "NodeJs", lvl: 2 },
+    { name: "API Development", lvl: 3 },
     { name: "User Interface Design", lvl: 3.5 },
     { name: "After Effects", lvl: 4.5 },
   ];

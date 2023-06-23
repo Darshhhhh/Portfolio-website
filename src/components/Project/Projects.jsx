@@ -48,7 +48,14 @@ function Projects() {
       <hr />
       <div className=" flex flex-wrap justify-start gap-10 lg:justify-between md:justify-between">
         {MY_PROJECTS.map((data, idx) => (
-          <div
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            transition={{ duration: `1.${idx}`, ease: "linear" }}
+            variants={{
+              visible: { opacity: 1, x: 0 },
+              hidden: { opacity: 0, x: idx % 2 == 0 ? 100 : -100 },
+            }}
             key={idx}
             className="w-screen flex flex-wrap ustify-start gap-10 lg:justify-between md:justify-between items-center border-b-[1px] border-[#5f5f5fb9] py-10"
           >
@@ -91,7 +98,7 @@ function Projects() {
                 </svg>
               </button>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
     </div>
