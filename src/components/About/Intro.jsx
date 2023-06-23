@@ -114,9 +114,11 @@ function Intro() {
         >
           <p>
             I&apos;m <span className="purple-text">Darsh Shah</span>,
-            23-year-old frontend developer from India, holding a bachelor&apos;s
-            degree in computer engineering. With more than year of experience in
-            Frontend Development.
+            23-year-old frontend developer from India, holding a
+            <span className="purple-text">
+              bachelor&apos;s degree in computer engineering
+            </span>
+            . With more than year of experience in Frontend Development.
             <br />
             <br />
             As a creative and experienced Frontend Engineer, I bring a unique
