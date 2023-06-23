@@ -60,11 +60,11 @@ function Projects() {
             className="w-screen flex flex-wrap ustify-start gap-10 lg:justify-between md:justify-between items-center border-b-[1px] border-[#5f5f5fb9] py-10"
           >
             <div className="flex flex-wrap justify-start gap-6 ">
-              <div className="overflow-hidden bg-cover bg-no-repeat hover:cursor-pointer">
+              <div className="overflow-hidden bg-cover bg-no-repeat hover:cursor-pointer rounded-lg">
                 <img
                   src={data.logo}
                   alt="ProjectImage"
-                  className="w-56 md:w-80 aspect-video transition duration-300 ease-in-out hover:scale-110"
+                  className="w-56 md:w-80 aspect-video transition duration-300 ease-in-out hover:scale-110 "
                 />
               </div>
               <div>
