@@ -22,7 +22,7 @@ function Header() {
     window.location.href = `mailto:contact.shahdarsh@gmail.com?subject=${subject}&body=${body}`;
   };
   return (
-    <header className="headerMainBox">
+    <header className="headerMainBox ">
       <nav
         className="mx-auto flex max-w-[100rem] items-center justify-between p-4 lg:px-8"
         aria-label="Global"

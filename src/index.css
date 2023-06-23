@@ -45,3 +45,7 @@ hr {
   border: none;
   font-weight: bold;
 }
+.ProjectSkills {
+  border: 1px solid var(--TextColor);
+  @apply rounded-full;
+}

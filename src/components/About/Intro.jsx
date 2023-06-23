@@ -21,7 +21,7 @@ function Intro() {
 
   return (
     <>
-      <div className="mx-auto max-w-[100rem] pt-10 md:pt-10 lg:pt-20 px-10 h-[100vh]">
+      <div className="mx-auto max-w-[100rem] pt-10 md:pt-10 lg:pt-20 px-10 mb-20 snap-start">
         <motion.h1
           initial="hidden"
           whileInView="visible"

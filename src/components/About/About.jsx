@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import Resume from "../../assets/Darsh_Shah_Resume.pdf";
+import Header from "../Header/Header";
 
 function About() {
   const SendEmail = () => {
@@ -18,8 +19,9 @@ function About() {
     document.body.removeChild(a);
   };
   return (
-    <>
-      <div className="relative mx-auto max-w-[100rem] pt-44 md:pt-56 lg:pt-64 px-10 h-[100vh]">
+    <main className="snap-start">
+      <Header />
+      <div className="relative mx-auto max-w-[100rem] pt-44 md:pt-56 lg:pt-64 px-10 h-screen ">
         <motion.h1
           initial="hidden"
           whileInView="visible"
@@ -81,7 +83,7 @@ function About() {
           </button>
         </motion.div>
       </div>
-    </>
+    </main>
   );
 }
 
