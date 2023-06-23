@@ -12,6 +12,7 @@ function Projects() {
       link: "https://healthx.vercel.app/",
       gitlink: "https://github.com/Darshhhhh/Healthyfy-2.0-React",
       logo: HealthX,
+      dec: "IoT based Remote Health Monitoring System For the measurement of bodily variables such the ECG, temperature, pulse rate, and oxygen level, it offers a solution. We are using a variety of sensors to collect data on human bodily characteristics.",
     },
     {
       id: 1,
@@ -20,6 +21,7 @@ function Projects() {
       link: "https://ai-article-summarizer-free.vercel.app/",
       gitlink: "https://github.com/Darshhhhh/Article-summarizer",
       logo: Articlesumm,
+      dec: "Our AI-powered article summarizer tool is perfect for professionals, academics, and researchers because it can swiftly and simply summarise lengthy articles with a few clicks!",
     },
     {
       id: 2,
@@ -28,6 +30,7 @@ function Projects() {
       link: "https://netflix-clone-92bcb.web.app/",
       gitlink: "https://github.com/Darshhhhh/Netflix-clone-ReactJs",
       logo: Netflix,
+      dec: "Just a Fun project to Re-create Netflix with 3rd Party APIs.",
     },
   ];
 
@@ -41,7 +44,7 @@ function Projects() {
           visible: { opacity: 1, x: 0 },
           hidden: { opacity: 0, x: -150 },
         }}
-        className="text-4xl font-bold mb-10"
+        className="text-4xl font-bold mb-10 mt-10"
       >
         <span className="purple-text">/</span>projects
       </motion.h1>
@@ -69,6 +72,9 @@ function Projects() {
               </div>
               <div>
                 <h3 className="text-3xl font-semibold">{data.name}</h3>
+                <p className="w-[300px] md:w-[600px] lg:[650px] text-gray-400">
+                  {data.dec}
+                </p>
                 <div className="flex gap-5 mt-6 flex-wrap w-[80%] lg:w-[100%]">
                   {data.skills.map((e, i) => (
                     <button className="ProjectSkills px-5 py-2" key={i}>
