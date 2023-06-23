@@ -8,7 +8,7 @@ function HomePage() {
       <About />
       <Intro />
       <Experiance />
-      {/* <Projects /> */}
+      <Projects />
     </main>
   );
 }

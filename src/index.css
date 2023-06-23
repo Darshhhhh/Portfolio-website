@@ -16,6 +16,11 @@ body {
 hr {
   border-color: #5f5f5fb9;
 }
+
+ul.exprianceDec {
+  list-style-type: "- ";
+  padding-inline-start: 4ch;
+}
 .iconHover {
   background-color: transparent;
   color: var(--TextColor);
