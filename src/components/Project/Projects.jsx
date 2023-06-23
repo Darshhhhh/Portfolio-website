@@ -8,7 +8,7 @@ function Projects() {
     {
       id: 0,
       name: "HealthX",
-      skills: ["React", "MongoDB", "Express", "Tailwind"],
+      skills: ["React", "MongoDB", "Express", "API Development", "Tailwind"],
       link: "https://healthx.vercel.app/",
       gitlink: "https://github.com/Darshhhhh/Healthyfy-2.0-React",
       logo: HealthX,
