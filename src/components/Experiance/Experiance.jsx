@@ -57,7 +57,7 @@ function Experiance() {
         }}
         className="text-4xl font-bold mb-10"
       >
-        <span className="purple-text">/</span>experiance
+        <span className="purple-text">/</span>experience
       </motion.h1>
       <hr />
       <div className="mt-4 px-5 flex gap-10 flex-wrap">
