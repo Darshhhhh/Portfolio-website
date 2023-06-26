@@ -46,7 +46,7 @@ function Experiance() {
     },
   ];
   return (
-    <div className="mx-auto max-w-[100rem] pt-10 md:pt-10 lg:pt-10 px-10 mb-96">
+    <div className="mx-auto max-w-[100rem] pt-10 md:pt-10 lg:pt-0 px-10 mb-96">
       <motion.h1
         initial="hidden"
         whileInView="visible"
@@ -60,7 +60,7 @@ function Experiance() {
         <span className="purple-text">/</span>experience
       </motion.h1>
       <hr />
-      <div className="mt-4 px-5 flex gap-10 flex-wrap">
+      <div className="mt-4 px-5 flex gap-10 flex-wrap pb-10">
         {MY_EXP.map((data, index) => (
           <motion.div
             initial="hidden"
@@ -68,10 +68,10 @@ function Experiance() {
             transition={{ duration: `1.${index}`, ease: "linear" }}
             variants={{
               visible: { opacity: 1, x: 0 },
-              hidden: { opacity: 0, x: 100 },
+              hidden: { opacity: 0, x: -100 },
             }}
             key={index}
-            className="mt-10 w-[450px]"
+            className="mt-10 w-[450px] "
           >
             <h4 className="text-base md:text-xl lg:text-2xl font-bold mb-2">
               <span className="purple-text">{"<"}</span>

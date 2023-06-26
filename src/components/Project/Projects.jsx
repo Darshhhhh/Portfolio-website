@@ -57,7 +57,7 @@ function Projects() {
             transition={{ duration: `1.${idx}`, ease: "linear" }}
             variants={{
               visible: { opacity: 1, x: 0 },
-              hidden: { opacity: 0, x: idx % 2 == 0 ? 100 : -100 },
+              hidden: { opacity: 0, x: -100 },
             }}
             key={idx}
             className="w-screen flex flex-wrap ustify-start gap-10 lg:justify-between md:justify-between items-center border-b-[1px] border-[#5f5f5fb9] py-10"
