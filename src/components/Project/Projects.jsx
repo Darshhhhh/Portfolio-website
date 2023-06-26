@@ -35,7 +35,7 @@ function Projects() {
   ];
 
   return (
-    <div className="mx-auto max-w-[100rem] pt-10 md:pt-10 lg:pt-10 px-10 h-max snap-start">
+    <div className="mx-auto max-w-[100rem] pt-10 md:pt-10 lg:pt-10 px-10 h-max">
       <motion.h1
         initial="hidden"
         whileInView="visible"
@@ -71,13 +71,18 @@ function Projects() {
                 />
               </div>
               <div>
-                <h3 className="text-3xl font-semibold">{data.name}</h3>
-                <p className="w-[300px] md:w-[600px] lg:[650px] text-gray-400">
+                <h3 className="text-base md:text-xl lg:text-3xl font-semibold">
+                  {data.name}
+                </h3>
+                <p className="w-[300px] md:w-[600px] lg:[650px] text-gray-400 text-xs md:text-base lg:text-base">
                   {data.dec}
                 </p>
                 <div className="flex gap-5 mt-6 flex-wrap w-[80%] lg:w-[100%]">
                   {data.skills.map((e, i) => (
-                    <button className="ProjectSkills px-5 py-2" key={i}>
+                    <button
+                      className="ProjectSkills px-4 py-1 md:px-7 md:py-1.5 lg:px-7 lg:py-2"
+                      key={i}
+                    >
                       {e}
                     </button>
                   ))}

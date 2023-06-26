@@ -24,7 +24,7 @@ function Header() {
   return (
     <header className="headerMainBox ">
       <nav
-        className="mx-auto flex max-w-[100rem] items-center justify-between p-4 lg:px-8"
+        className="flex max-w-[100rem] items-center justify-between p-4 lg:px-8"
         aria-label="Global"
       >
         <motion.div
@@ -33,7 +33,7 @@ function Header() {
           transition={{ duration: 1, ease: "linear" }}
           variants={{
             visible: { opacity: 1, x: 0 },
-            hidden: { opacity: 0, x: -150 },
+            hidden: { opacity: 0, x: -150},
           }}
           className="flex lg:flex-1"
         >
@@ -42,7 +42,7 @@ function Header() {
               className="h-12 w-auto md:hidden lg:hidden"
               src={
                 ThemeSelected === null
-                  ? LightHeaderBrandIcon
+                  ? DarkHeaderBrandIcon
                   : ThemeSelected === "Light"
                   ? LightHeaderBrandIcon
                   : DarkHeaderBrandIcon

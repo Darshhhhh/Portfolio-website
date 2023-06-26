@@ -19,9 +19,9 @@ function About() {
     document.body.removeChild(a);
   };
   return (
-    <main className="snap-start">
+    <main>
       <Header />
-      <div className="relative mx-auto max-w-[100rem] pt-44 md:pt-56 lg:pt-64 px-10 h-screen ">
+      <div className="relative mx-auto max-w-[100rem] pt-44 md:pt-56 lg:pt-64 px-10 h-screen">
         <motion.h1
           initial="hidden"
           whileInView="visible"

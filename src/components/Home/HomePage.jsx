@@ -4,7 +4,7 @@ import Experiance from "../Experiance/Experiance";
 import Projects from "../Project/Projects";
 function HomePage() {
   return (
-    <main className="snap-y snap-mandatory h-screen overflow-y-scroll mainbox">
+    <main className="scroll-smooth h-screen mainbox">
       <About />
       <Intro />
       <Experiance />

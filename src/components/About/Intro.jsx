@@ -22,7 +22,7 @@ function Intro() {
 
   return (
     <>
-      <div className="mx-auto max-w-[100rem] pt-10 md:pt-10 lg:pt-20 px-10 mb-20 snap-start">
+      <div className="mx-auto max-w-[100rem] pt-10 md:pt-10 lg:pt-20 px-10 mb-20">
         <motion.h1
           initial="hidden"
           whileInView="visible"
@@ -43,7 +43,7 @@ function Intro() {
             visible: { opacity: 1 },
             hidden: { opacity: 0 },
           }}
-          className="mt-10 flex gap-12 items-center"
+          className="mt-10 flex gap-5 md:gap-7 lg:gap-12 items-center"
         >
           <img src={myImage} className="w-28 rounded-full filter grayscale" />
           <div className="flex gap-2">
@@ -110,13 +110,14 @@ function Intro() {
             visible: { opacity: 1 },
             hidden: { opacity: 0 },
           }}
-          className="my-10 text-2xl"
+          className="my-10 text-sm md:text-xl lg:text-2xl"
         >
           <p>
             I&apos;m <span className="purple-text">Darsh Shah</span>,
             23-year-old frontend developer from India, holding a
             <span className="purple-text">
-              {" "}bachelor&apos;s degree in computer engineering
+              {" "}
+              bachelor&apos;s degree in computer engineering
             </span>
             . With more than year of experience in Frontend Development.
             <br />
@@ -130,7 +131,7 @@ function Intro() {
             my eagerness to learn, make me a valuable asset to any team.
           </p>
         </motion.div>
-        <div className="mt-5">
+        <div className="mt-5 lg:mb-56">
           <motion.h1
             initial="hidden"
             whileInView="visible"
@@ -155,7 +156,7 @@ function Intro() {
                     hidden: { opacity: 0, x: -150 },
                   }}
                   key={index}
-                  className="skills px-10 py-3.5 hover:px-16 hover:text-white"
+                  className="skills px-5 py-1 md:px-7 md:py-1.5 lg:px-10 lg:py-3.5  hover:px-16 hover:text-white"
                   name="skillBtn"
                   value=""
                   onMouseOver={() =>

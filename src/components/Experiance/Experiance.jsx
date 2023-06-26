@@ -46,7 +46,7 @@ function Experiance() {
     },
   ];
   return (
-    <div className="mx-auto max-w-[100rem] pt-10 md:pt-10 lg:pt-10 px-10 snap-start mb-96">
+    <div className="mx-auto max-w-[100rem] pt-10 md:pt-10 lg:pt-10 px-10 mb-96">
       <motion.h1
         initial="hidden"
         whileInView="visible"
@@ -73,18 +73,20 @@ function Experiance() {
             key={index}
             className="mt-10 w-[450px]"
           >
-            <h4 className="text-2xl font-bold mb-2">
+            <h4 className="text-base md:text-xl lg:text-2xl font-bold mb-2">
               <span className="purple-text">{"<"}</span>
               {data.position} <span className="purple-text"> /</span>
               <span className="purple-text">{">"}</span>
             </h4>
-            <h5 className="text-xl ps-5 text-gray-400">at {data.cmpName}</h5>
-            <p className="text-sm ps-5 text-gray-400">{data.type}</p>
-            <h5 className="text-md ps-5 text-gray-400 mt-1">
+            <h5 className="text-base md:text-xl lg:text-2xl ps-5 text-gray-400">
+              at {data.cmpName}
+            </h5>
+            <p className="text-sm md:text-lg ps-5 text-gray-400">{data.type}</p>
+            <h5 className="text-sm md:text-lg lg:text-lg ps-5 text-gray-400 mt-1">
               {data.duration} <span className="font-bold text-2xl"> · </span>
               {data.timeDiff}
             </h5>
-            <ul className="text-md ps-5 text-gray-400 mt-1 exprianceDec">
+            <ul className="text-sm md:text-lg lg:text-xl ps-5 text-gray-400 mt-1 exprianceDec">
               {data.cmt.map((d, i) => (
                 <li key={i}>{d}</li>
               ))}
