@@ -9,9 +9,9 @@ function Experiance() {
       timeDiff: "1 yr 1 mo",
       type: "Full-Time",
       cmt: [
-        "Responsible to Develope and Manage large Scale Client Side Web Appliactions",
-        "Developed Multiple Fetures for EMS Systems Named Moramba.",
-        "Created Highly Engaging User Interface Designs for multiple Web Appliactions.",
+        "Responsible for developing and managing large-scale client-side web applications.",
+        "Developed Multiple Features for EMS Systems Named Moramba.",
+        "Created Highly Engaging User Interface Designs for multiple Web applications.",
       ],
     },
     {
@@ -21,8 +21,8 @@ function Experiance() {
       timeDiff: "4 mos",
       type: "Internship",
       cmt: [
-        "Gethered Knowlage about React and Other client Side Technologies.",
-        "Developed Health Care Tool with Combination of IoT and React to solve problems in healthcare department.",
+        "Got knowledge about React and Other client-side technologies.",
+        "Developed a healthcare Tool with a combination of IoT and React to solve problems in the healthcare department.",
       ],
     },
     {
@@ -32,7 +32,7 @@ function Experiance() {
       timeDiff: "2 mos",
       type: "Internship",
       cmt: [
-        "Learn about Native Technologies like Flutter,ReactNative & Dart.",
+        "Learn about Native Technologies like Flutter, React Native, and Dart.",
         "Developed basic understaning about Native platfom ecosystem for development.",
       ],
     },

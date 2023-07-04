@@ -10,6 +10,7 @@ function Intro() {
     { name: "Tailwind", lvl: 4 },
     { name: "Javascript", lvl: 4 },
     { name: "React", lvl: 4 },
+    { name: "Git", lvl: 2.5 },
     { name: "Redux-toolkit", lvl: 4 },
     { name: "Figma", lvl: 4 },
     { name: "MongoDB", lvl: 2 },
@@ -114,7 +115,7 @@ function Intro() {
         >
           <p>
             I&apos;m <span className="purple-text">Darsh Shah</span>,
-            23-year-old frontend developer from India, holding a
+            23-year-old frontend developer, holding a
             <span className="purple-text">
               {" "}
               bachelor&apos;s degree in computer engineering
@@ -156,22 +157,23 @@ function Intro() {
                     hidden: { opacity: 0, x: -150 },
                   }}
                   key={index}
-                  className="skills px-5 py-1 md:px-7 md:py-1.5 lg:px-10 lg:py-3.5  hover:px-16 hover:text-white"
+                  className="skills px-5 py-1 md:px-7 md:py-1.5 lg:px-10 lg:py-3.5  hover:text-white"
                   name="skillBtn"
                   value=""
-                  onMouseOver={() =>
-                    (document.getElementsByName("skillBtn")[
-                      index
-                    ].innerHTML = `${data.lvl}/5`)
-                  }
-                  onMouseLeave={() =>
-                    (document.getElementsByName("skillBtn")[
-                      index
-                    ].innerHTML = `${data.name}`)
-                  }
+                  // onMouseOver={() =>
+                  //   (document.getElementsByName("skillBtn")[
+                  //     index
+                  //   ].innerHTML = `${data.lvl}/5`)
+                  // }
+                  // onMouseLeave={() =>
+                  //   (document.getElementsByName("skillBtn")[
+                  //     index
+                  //   ].innerHTML = `${data.name}`)
+                  // }
                 >
                   {data.name}
                 </motion.button>
+                {/* <p>{data.lvl}</p> */}
               </>
             ))}
           </div>

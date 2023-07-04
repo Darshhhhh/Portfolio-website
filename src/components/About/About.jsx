@@ -1,14 +1,22 @@
 import { motion } from "framer-motion";
 import Resume from "../../assets/Darsh_Shah_Resume.pdf";
 import Header from "../Header/Header";
+import { Cursor, useTypewriter } from "react-simple-typewriter";
 
 function About() {
+  const ThemeSelected = sessionStorage.getItem("CurrentTheme");
+
   const SendEmail = () => {
     var subject = "Let's Connect!";
     var body = "Hello,I'm [Your Name]!,would love to have chat with you!";
     window.location.href = `mailto:contact.shahdarsh@gmail.com?subject=${subject}&body=${body}`;
   };
-
+  const [text] = useTypewriter({
+    words: ["Developer"],
+    loop: 1,
+    delaySpeed: 1000,
+    typeSpeed: 150,
+  });
   const dowloadResume = () => {
     var url = Resume;
     const a = document.createElement("a");
@@ -32,7 +40,19 @@ function About() {
           }}
           className="text-5xl font-bold md:text-5xl lg:text-9xl "
         >
-          The Frontend <span className="purple-text">Wizard</span>.
+          Frontend{" "}
+          <span className="purple-text">
+            {text}
+            <Cursor
+              cursorColor={
+                ThemeSelected === null
+                  ? "#FFF"
+                  : ThemeSelected === "Dark"
+                  ? "#FFF"
+                  : "#000"
+              }
+            />
+          </span>
         </motion.h1>
         <motion.p
           initial="hidden"
