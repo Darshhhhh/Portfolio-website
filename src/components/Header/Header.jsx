@@ -3,18 +3,18 @@ import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import LightHeaderBrandIcon from "../../assets/light-logo-2.png";
 import DarkHeaderBrandIcon from "../../assets/Dark-logo-2.png";
-import ChnageTheme from "../../utils/ChangeTheme";
+// import ChnageTheme from "../../utils/ChangeTheme";
 import { Link } from "react-router-dom";
 import { SocialIcon } from "react-social-icons";
 import { motion } from "framer-motion";
 
 function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [Theme, SetTheme] = useState(false); //false = Light Theme || True = Dark
-  const ThemeChanged = () => {
-    let CurrentTheme = Theme ? "Dark" : "Light";
-    ChnageTheme(CurrentTheme);
-  };
+  // const [Theme, SetTheme] = useState(false); //false = Light Theme || True = Dark
+  // const ThemeChanged = () => {
+  //   let CurrentTheme = Theme ? "Dark" : "Light";
+  //   ChnageTheme(CurrentTheme);
+  // };
   const ThemeSelected = sessionStorage.getItem("CurrentTheme");
   const SendEmail = () => {
     var subject = "Let's Connect!";
@@ -125,7 +125,7 @@ function Header() {
               }
             />
           </Link>
-          <div className="hidden lg:flex lg:flex-1 lg:justify-end">
+          {/* <div className="hidden lg:flex lg:flex-1 lg:justify-end">
             <button
               onClick={() => [SetTheme(!Theme), ThemeChanged()]}
               className="px-2 py-1 rounded-md"
@@ -162,7 +162,7 @@ function Header() {
                 </svg>
               )}
             </button>
-          </div>
+          </div> */}
         </motion.div>
       </nav>
       <Dialog
