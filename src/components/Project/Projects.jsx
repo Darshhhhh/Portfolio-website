@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import Netflix from "../../assets/netflixDashboard.png";
 import Articlesumm from "../../assets/articalDashboard.png";
 import HealthX from "../../assets/HealthXDashboard.png";
-
+import Blockexlorer from "../../assets/blockexplorer.png"
 function Projects() {
   const MY_PROJECTS = [
     {
@@ -13,6 +13,24 @@ function Projects() {
       gitlink: "https://github.com/Darshhhhh/Healthyfy-2.0-React",
       logo: HealthX,
       dec: "IoT based Remote Health Monitoring System For the measurement of bodily variables such the ECG, temperature, pulse rate, and oxygen level, it offers a solution. We are using a variety of sensors to collect data on human bodily characteristics.",
+    },
+    {
+      id: 3,
+      name: "BlockExplorer",
+      skills: [
+        "React",
+        "Web3Js",
+        "Hardhat",
+        "EtherJs",
+        "solidity",
+        "Tailwind",
+        "MongoDB",
+        "ExpressJs",
+      ],
+      link: "https://github.com/Darshhhhh/Blockchain-Explorer",
+      gitlink: "https://github.com/Darshhhhh/Blockchain-Explorer",
+      logo: Blockexlorer,
+      dec: "Developed Blockexplorer using the MERN stack.Integrated blockchain functionality via web3.js and EtherJS.Implemented real-time transaction monitoring using React.js frontend.",
     },
     {
       id: 1,

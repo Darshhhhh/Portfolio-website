@@ -40,7 +40,7 @@ function About() {
           }}
           className="text-5xl font-bold md:text-5xl lg:text-9xl "
         >
-          Frontend{" "}
+          Full Stack <span className="underline decoration-yellow-200">Blockchain </span>
           <span className="purple-text">
             {text}
             <Cursor

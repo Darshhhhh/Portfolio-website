@@ -5,17 +5,26 @@ import { motion } from "framer-motion";
 function Intro() {
   const ThemeSelected = sessionStorage.getItem("CurrentTheme");
   const Skills = [
-    { name: "HTML", lvl: 4.5 },
-    { name: "CSS", lvl: 4 },
-    { name: "Tailwind", lvl: 4 },
     { name: "Javascript", lvl: 4 },
     { name: "React", lvl: 4 },
-    { name: "Git", lvl: 2.5 },
-    { name: "Redux-toolkit", lvl: 4 },
-    { name: "Figma", lvl: 4 },
-    { name: "MongoDB", lvl: 2 },
-    { name: "Express", lvl: 2 },
     { name: "NodeJs", lvl: 2 },
+    { name: "Express", lvl: 3 },
+    { name: "Solidity", lvl: 2 },
+    { name: "MongoDB", lvl: 2 },
+    { name: "Firebase", lvl: 2 },
+    { name: "Web3Js", lvl: 2 },
+    { name: "EtherJs", lvl: 2 },
+    { name: "ThreeJs", lvl: 2 },
+    { name: "Redux-toolkit", lvl: 4 },
+    { name: "Tailwind-CSS", lvl: 4 },
+    { name: "Shadcn/UI", lvl: 2 },
+    { name: "Hardhat", lvl: 2 },
+    { name: "Postman", lvl: 2 },
+    { name: "Vercel", lvl: 2 },
+    { name: "Docker", lvl: 2 },
+    { name: "Git", lvl: 2.5 },
+    { name: "Kubernetes", lvl: 2 },
+    { name: "Figma", lvl: 4 },
     { name: "API Development", lvl: 3 },
     { name: "User Interface Design", lvl: 3.5 },
     { name: "After Effects", lvl: 4.5 },
@@ -115,21 +124,25 @@ function Intro() {
         >
           <p>
             I&apos;m <span className="purple-text">Darsh Shah</span>,
-            23-year-old frontend developer, holding a
+            23-year-old Full Stack Blockchain Developer, holding a
             <span className="purple-text">
               {" "}
               bachelor&apos;s degree in computer engineering
             </span>
-            . With more than year of experience in Frontend Development.
+            . With more than year and half of experience in Frontend
+            Development.
             <br />
             <br />
-            As a creative and experienced Frontend Engineer, I bring a unique
+            As a creative and experienced Engineer, I bring a unique
             combination of technical skills, design expertise, and a passion for
             visual effects to the table. I am constantly seeking to expand my
-            skill set and learning and exploring new technologies, and keen to
-            dive into blockchain development in my next role. My ability to
-            deliver visually stunning and user-friendly designs, combined with
-            my eagerness to learn, make me a valuable asset to any team.
+            skill set and stay ahead of the curve in the ever-evolving tech
+            industry. While I don't have direct experience in blockchain
+            development, I am passionate about learning and exploring new
+            technologies, and keen to dive into blockchain development in my
+            next role. My ability to deliver visually stunning and user-friendly
+            designs, combined with my eagerness to learn, make me a valuable
+            asset to any team.
           </p>
         </motion.div>
         <div className="mt-5 lg:mb-56">

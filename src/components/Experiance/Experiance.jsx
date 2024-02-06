@@ -9,9 +9,10 @@ function Experiance() {
       timeDiff: "1 yr 1 mo",
       type: "Full-Time",
       cmt: [
-        "Responsible for developing and managing large-scale client-side web applications.",
-        "Developed Multiple Features for EMS Systems Named Moramba.",
-        "Created Highly Engaging User Interface Designs for multiple Web applications.",
+        "Spearheaded front-end innovation across Moramba, BreathEasy, and SilverlineNFT projects.",
+        "Achieved a remarkable performance boost in Moramba with React.js interfaces.",
+        "Enhanced project efficiency through rigorous code quality enhancements.",
+        "•Crafted captivating UI/UX solutions, driving BreathEasy to the forefront of healthcare technology, and made significant contributions to a prestigious NFT Marketplace project using React, Web3.js, and EtherJS expertise.",
       ],
     },
     {
@@ -21,8 +22,10 @@ function Experiance() {
       timeDiff: "4 mos",
       type: "Internship",
       cmt: [
-        "Got knowledge about React and Other client-side technologies.",
-        "Developed a healthcare Tool with a combination of IoT and React to solve problems in the healthcare department.",
+        "Led the development of HealthX, an IoT-based health monitoring system, during internship tenure.",
+        "Utilized IoT devices to capture essential human parameters: Heartbeat, Oxygen Level,Pulse Rate, Temperature, and ECG.",
+        "Programmed IoT devices using Arduino IDE for seamless data transmission to the server.",
+        "Developed frontend interface with ReactJS for real-time access to health metrics and engineered backend with PHP for robust data management and API creation, ensuring smooth frontend-server communication.",
       ],
     },
     {
