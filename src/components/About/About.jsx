@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import Resume from "../../assets/Darsh-Shah-Resume.pdf";
+import Resume from "../../assets/Darsh-Shah-Full-Stack-Blockchain-Resume.pdf";
 import Header from "../Header/Header";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 
