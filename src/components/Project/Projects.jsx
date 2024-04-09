@@ -2,17 +2,34 @@ import { motion } from "framer-motion";
 import Netflix from "../../assets/netflixDashboard.png";
 import Articlesumm from "../../assets/articalDashboard.png";
 import HealthX from "../../assets/HealthXDashboard.png";
-import Blockexlorer from "../../assets/blockexplorer.png"
+import Blockexlorer from "../../assets/blockexplorer.png";
+import EduLink from "../../assets/EduLink.jpg";
+
 function Projects() {
   const MY_PROJECTS = [
     {
-      id: 0,
-      name: "HealthX",
-      skills: ["React", "MongoDB", "Express", "API Development", "Tailwind"],
-      link: "https://healthx.vercel.app/",
-      gitlink: "https://github.com/Darshhhhh/Healthyfy-2.0-React",
-      logo: HealthX,
-      dec: "IoT based Remote Health Monitoring System For the measurement of bodily variables such the ECG, temperature, pulse rate, and oxygen level, it offers a solution. We are using a variety of sensors to collect data on human bodily characteristics.",
+      id: 4,
+      name: "EduLink",
+      skills: [
+        "React",
+        "Solidity",
+        "EtherJs",
+        "Github Workflows",
+        "GCP",
+        "Ansible",
+        "Terraform",
+        "Jenkins",
+        "Kubernetes",
+        "Docker",
+        "JMeter",
+        "Vercel",
+        "Tailwind",
+        "framer motion",
+      ],
+      link: "https://edulinkv1.vercel.app/",
+      gitlink: "https://github.com/BhartiyaYeti/FrostiYeti-V2",
+      logo: EduLink,
+      dec: "EduLink is a groundbreaking blockchain-based crowdfunding DApp designed to transform the funding of education and research grants. Utilizing the Avalanche blockchain, it promises transparency, reduced fees, and global access, revolutionizing educational funding by connecting researchers and educators with worldwide backers.",
     },
     {
       id: 3,
@@ -32,6 +49,16 @@ function Projects() {
       logo: Blockexlorer,
       dec: "Developed Blockexplorer using the MERN stack.Integrated blockchain functionality via web3.js and EtherJS.Implemented real-time transaction monitoring using React.js frontend.",
     },
+    {
+      id: 0,
+      name: "HealthX",
+      skills: ["React", "MongoDB", "Express", "API Development", "Tailwind"],
+      link: "https://healthx.vercel.app/",
+      gitlink: "https://github.com/Darshhhhh/Healthyfy-2.0-React",
+      logo: HealthX,
+      dec: "IoT based Remote Health Monitoring System For the measurement of bodily variables such the ECG, temperature, pulse rate, and oxygen level, it offers a solution. We are using a variety of sensors to collect data on human bodily characteristics.",
+    },
+
     {
       id: 1,
       name: "Article Summarizer",
@@ -80,7 +107,7 @@ function Projects() {
             key={idx}
             className="w-screen flex flex-wrap ustify-start gap-10 lg:justify-between md:justify-between items-center border-b-[1px] border-[#5f5f5fb9] py-10"
           >
-            <div className="flex flex-wrap justify-start gap-6 ">
+            <div className="flex justify-around gap-6 ">
               <div className="overflow-hidden bg-cover bg-no-repeat hover:cursor-pointer rounded-lg">
                 <img
                   src={data.logo}
@@ -88,14 +115,14 @@ function Projects() {
                   className="w-56 md:w-80 aspect-video transition duration-300 ease-in-out hover:scale-110 "
                 />
               </div>
-              <div>
+              <div className="w-[80%] lg:w-[990px]">
                 <h3 className="text-base md:text-xl lg:text-3xl font-semibold">
                   {data.name}
                 </h3>
-                <p className="w-[300px] md:w-[600px] lg:[650px] text-gray-400 text-xs md:text-base lg:text-base">
+                <p className=" text-gray-400 text-xs md:text-base lg:text-base">
                   {data.dec}
                 </p>
-                <div className="flex gap-5 mt-6 flex-wrap w-[80%] lg:w-[100%]">
+                <div className="flex gap-5 mt-6 flex-wrap ">
                   {data.skills.map((e, i) => (
                     <button
                       className="ProjectSkills px-4 py-1 md:px-7 md:py-1.5 lg:px-7 lg:py-2"

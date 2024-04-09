@@ -12,7 +12,7 @@ function About() {
     window.location.href = `mailto:contact.shahdarsh@gmail.com?subject=${subject}&body=${body}`;
   };
   const [text] = useTypewriter({
-    words: ["Developer"],
+    words: ["Developer🚀"],
     loop: 1,
     delaySpeed: 1000,
     typeSpeed: 150,
@@ -40,7 +40,8 @@ function About() {
           }}
           className="text-5xl font-bold md:text-5xl lg:text-9xl "
         >
-          Full Stack <span className="underline decoration-yellow-200">Blockchain </span>
+          Full Stack{" "}
+          <span className="underline decoration-yellow-200">Blockchain </span>
           <span className="purple-text">
             {text}
             <Cursor
