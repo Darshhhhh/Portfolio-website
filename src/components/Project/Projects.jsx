@@ -26,7 +26,7 @@ function Projects() {
         "Tailwind",
         "framer motion",
       ],
-      link: "https://edulinkv1.vercel.app/",
+      link: "https://edbucks.vercel.app/",
       gitlink: "https://github.com/BhartiyaYeti/FrostiYeti-V2",
       logo: EduLink,
       dec: "EduLink is a groundbreaking blockchain-based crowdfunding DApp designed to transform the funding of education and research grants. Utilizing the Avalanche blockchain, it promises transparency, reduced fees, and global access, revolutionizing educational funding by connecting researchers and educators with worldwide backers.",
