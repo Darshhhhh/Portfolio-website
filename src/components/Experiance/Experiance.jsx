@@ -3,6 +3,14 @@ import { motion } from "framer-motion";
 function Experiance() {
   const MY_EXP = [
     {
+      cmpName: "Aurkei",
+      position: "Blockchain Developer",
+      duration: "May 2024 - Present",
+      timeDiff: "",
+      type: "Full-Time",
+      cmt: [],
+    },
+    {
       cmpName: "Aeropres India Private Limited",
       position: "Frontend Developer",
       duration: "Jun 2022 - Jun 2023",
