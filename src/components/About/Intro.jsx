@@ -123,34 +123,22 @@ function Intro() {
           className="my-10 text-sm md:text-xl lg:text-2xl"
         >
           <p>
-            I&apos;m <span className="purple-text">Darsh Shah</span>,
-            24-year-old Full Stack Blockchain Developer, holding a
-            <span className="purple-text">
-              {" "}
-              bachelor&apos;s degree in computer engineering
-            </span>
-            . With more than year and half of experience in Full Stack
-            Development.
-            <br />
-            <br />
-            As a seasoned Blockchain Developer specializing in DApps, I bring a
-            wealth of technical expertise and a commitment to innovation to
-            every project. With a solid background in Full Stack Engineering,
-            I'm well-equipped to tackle the complexities of blockchain
-            technology with confidence and precision.
-            <br />
-            My journey in the tech industry has been defined by a relentless
-            pursuit of knowledge and a passion for staying ahead of the curve.
-            Now, I'm eager to channel my skills into the dynamic world of
-            blockchain development, where I can leverage my ability to craft
-            intuitive designs and user-friendly
-            <br />
-            interfaces. Driven by a thirst for excellence, I continuously seek
-            out opportunities to expand my skill set and explore new
-            technologies. I believe that my diverse experience and dedication to
-            continuous improvement make me a valuable asset to any team. I'm
-            excited to bring my expertise to projects that are shaping the
-            future of technology.
+            As a seasoned Developer specializing in{" "}
+            <span className="purple-text">Blockchain</span>, I bring a wealth of
+            technical expertise and a commitment to innovation to every project.
+            With a solid background in Full Stack Engineering, I&apos;m
+            well-equipped to tackle the complexities of blockchain technology
+            with confidence and precision. My journey in the tech industry has
+            been defined by a relentless pursuit of knowledge and a passion for
+            staying ahead of the curve. Now, I&apos;m eager to channel my skills
+            into the dynamic world of blockchain, where I can leverage my
+            ability to craft intuitive designs and user-friendly interfaces.
+            Driven by a thirst for excellence, I continuously seek out
+            opportunities to expand my skill set and explore new technologies. I
+            believe that my diverse experience and dedication to continuous
+            improvement make me a valuable asset to any team. I&apos;m excited
+            to bring my expertise to projects that are shaping the future of
+            technology.
           </p>
         </motion.div>
         <div className="mt-5 lg:mb-56">
