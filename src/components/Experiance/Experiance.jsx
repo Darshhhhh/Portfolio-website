@@ -108,7 +108,7 @@ function Experiance() {
               {data.duration} <span className="font-bold text-2xl"> · </span>
               {data.timeDiff}
             </h5>
-            <ul className="text-sm md:text-lg lg:text-xl ps-5 text-gray-400 mt-1 exprianceDec">
+            <ul className="text-sm md:text-base lg:text-base ps-5 text-gray-400 mt-1 exprianceDec">
               {data.cmt.map((d, i) => (
                 <li key={i}>{d}</li>
               ))}
