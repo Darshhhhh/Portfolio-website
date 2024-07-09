@@ -8,7 +8,12 @@ function Experiance() {
       duration: "May 2024 - Present",
       timeDiff: "",
       type: "Full-Time",
-      cmt: [],
+      cmt: [
+        "Developing Aurkoin (ARK) token with comprehensive Token design and tokenomics.",
+        "Designing and implementing secure smart contracts for Aurkie.",
+        "Leading backend development for Aurkie Mobile App with blockchain integration.",
+        "Conducting in-depth research on Real World Asset (RWA) tokenization for blockchain integration, producing actionable insights.",
+      ],
     },
     {
       cmpName: "Aeropres India Private Limited",
