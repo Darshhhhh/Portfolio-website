@@ -3,33 +3,31 @@ import { motion } from "framer-motion";
 function Experiance() {
   const MY_EXP = [
     {
-      cmpName: "Aurkei",
-      position: "Blockchain Developer",
-      duration: "May 2024 - Present",
-      timeDiff: "",
-      type: "Full-Time",
-      cmt: [
-        "Developing Aurkoin (ARK) token with comprehensive Token design and tokenomics.",
-        "Designing and implementing secure smart contracts for Aurkie.",
-        "Leading backend development for Aurkie Mobile App with blockchain integration.",
-        "Conducting in-depth research on Real World Asset (RWA) tokenization for blockchain integration, producing actionable insights.",
-      ],
-    },
-    {
       cmpName: "George Brown College",
-      position: "Research Lead",
+      position: "Blockchain Research Lead",
       duration: "Apr 2024 - Present",
       timeDiff: "",
       type: "Part-Time",
       cmt: [
-        "Led comprehensive research on RWA tokenization in blockchain.",
-        "Analyzed and interpreted trends in blockchain technology.",
-        "Authored a detailed research paper on project findings.",
-        "Engaged with industry experts for insights and validation.",
-        "Coordinated team efforts to meet project deadlines.",
-        "Organized and led team meetings to ensure progress.",
-        "Maintained project documentation and reports.",
-        "Explored innovative applications of RWA tokenization",
+        "Leading comprehensive research on RWA tokenization in blockchain.",
+        "Analyzing and interpreting trends in blockchain technology.",
+        "Authoring a detailed research paper on project findings.",
+        "Engaging with industry experts for insights and validation.",
+        "Coordinating team efforts to meet project deadlines.",
+        "Exploring innovative applications of RWA tokenization.",
+      ],
+    },
+    {
+      cmpName: "Aurkei Inc.",
+      position: "Blockchain Developer",
+      duration: "May 2024 - Aug 2024",
+      timeDiff: "4 mos",
+      type: "Co-Op",
+      cmt: [
+        "Led the development of Aurkoin (ARK) token and wrote Smart Contracts.",
+        "Designed the tokenomics model for Aurkoin.",
+        "Conducted research on blockchain Real-World Asset (RWA) tokenization.",
+        "Developed the backend for Aurkie Mobile App.",
       ],
     },
     {
