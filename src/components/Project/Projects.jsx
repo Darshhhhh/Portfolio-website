@@ -4,9 +4,25 @@ import Articlesumm from "../../assets/articalDashboard.png";
 import HealthX from "../../assets/HealthXDashboard.png";
 import Blockexlorer from "../../assets/blockexplorer.png";
 import EduLink from "../../assets/EduLink.jpg";
+import ResearchPaper from "../../assets/cover.png";
 
 function Projects() {
   const MY_PROJECTS = [
+    {
+      id: 5,
+      name: "RWA Tokenization Research",
+      skills: [
+        "Technical Research",
+        "Technical Writing",
+        "Leadership",
+        "Team Management",
+      ],
+      link: "https://www.linkedin.com/posts/darsh-shahx_rwa-tokenization-2024-blockchain-activity-7229101645362569216-2J4H?utm_source=share&utm_medium=member_desktop",
+      gitlink:
+        "https://www.linkedin.com/posts/darsh-shahx_rwa-tokenization-2024-blockchain-activity-7229101645362569216-2J4H?utm_source=share&utm_medium=member_desktop",
+      logo: ResearchPaper,
+      dec: "The hashtag RWA tokenization report covers 12 use cases explaining how the blockchain technology can benefit humanity in multiple industries and sectors.",
+    },
     {
       id: 4,
       name: "EduLink",
