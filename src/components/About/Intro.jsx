@@ -5,11 +5,12 @@ import { motion } from "framer-motion";
 function Intro() {
   const ThemeSelected = sessionStorage.getItem("CurrentTheme");
   const Skills = [
+    { name: "Solidity", lvl: 2 },
+    { name: "Technical Research", lvl: 3 },
     { name: "Javascript", lvl: 4 },
     { name: "React", lvl: 4 },
     { name: "NodeJs", lvl: 2 },
     { name: "Express", lvl: 3 },
-    { name: "Solidity", lvl: 2 },
     { name: "MongoDB", lvl: 2 },
     { name: "Firebase", lvl: 2 },
     { name: "Web3Js", lvl: 2 },
@@ -30,6 +31,9 @@ function Intro() {
     { name: "After Effects", lvl: 4.5 },
   ];
 
+  const ColoredText = (TextYouWantToColor) => {
+    return <p className="purple-text">{TextYouWantToColor}</p>;
+  };
   return (
     <>
       <div className="mx-auto max-w-[100rem] pt-10 md:pt-10 lg:pt-20 px-10 mb-10">
@@ -154,19 +158,19 @@ function Intro() {
           >
             <span className="purple-text">/</span>skills
           </motion.h1>
-          <div className="flex flex-wrap gap-6 mt-10 lg:max-w-[60%] justify-center lg:justify-start md:justify-start">
+          <div className="flex flex-wrap gap-6 mt-10 justify-center lg:justify-start md:justify-start">
             {Skills.map((data, index) => (
               <>
                 <motion.button
                   initial="hidden"
                   whileInView="visible"
-                  transition={{ duration: `1.${index}`, ease: "linear" }}
+                  transition={{ duration: 1, ease: "linear" }}
                   variants={{
                     visible: { opacity: 1, x: 0 },
                     hidden: { opacity: 0, x: -150 },
                   }}
                   key={index}
-                  className="skills px-5 py-1 md:px-7 md:py-1.5 lg:px-10 lg:py-3.5  hover:text-white"
+                  className="text-2xl flex"
                   name="skillBtn"
                   value=""
                   // onMouseOver={() =>
@@ -180,7 +184,9 @@ function Intro() {
                   //   ].innerHTML = `${data.name}`)
                   // }
                 >
-                  {data.name}
+                  {ColoredText("<")}
+                  {data.name}&nbsp;
+                  {ColoredText(" />")}
                 </motion.button>
                 {/* <p>{data.lvl}</p> */}
               </>
