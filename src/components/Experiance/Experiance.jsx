@@ -5,11 +5,11 @@ function Experiance() {
     {
       cmpName: "George Brown College",
       position: "Blockchain Research Lead",
-      duration: "Apr 2024 - Present",
-      timeDiff: "",
-      type: "Part-Time",
+      duration: "Apr 2024 - Aug 2024",
+      timeDiff: "5 mos",
+      type: "Contract Part-Time",
       cmt: [
-        "Leading comprehensive research on RWA tokenization in blockchain.",
+        "Lead Team of 10 on RWA tokenization Research in blockchain.",
         "Analyzing and interpreting trends in blockchain technology.",
         "Authoring a detailed research paper on project findings.",
         "Engaging with industry experts for insights and validation.",
