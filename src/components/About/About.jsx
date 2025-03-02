@@ -40,7 +40,7 @@ function About() {
           }}
           className="text-5xl font-bold md:text-5xl lg:text-8xl mb-10 "
         >
-          <span className="underline decoration-yellow-200">Blockchain </span>
+          <span className="underline decoration-yellow-200">Software </span>
           <span className="purple-text">
             {text}
             <Cursor
@@ -54,6 +54,9 @@ function About() {
             />
           </span>
         </motion.h1>
+        <h5 className="text-xl font-light md:text-lg lg:text-2xl mb-10 ">
+          Blockchain | Web3 | Crypto
+        </h5>
         <motion.p
           initial="hidden"
           whileInView="visible"
