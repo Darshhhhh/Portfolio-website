@@ -55,9 +55,9 @@ function About() {
             />
           </span>
         </motion.h1>
-        <h5 className="text-xl font-light md:text-lg lg:text-2xl mb-10 ">
+        {/* <h5 className="text-xl font-light md:text-lg lg:text-2xl mb-10 ">
           Blockchain | Web3 | Crypto
-        </h5>
+        </h5> */}
         <motion.p
           initial="hidden"
           whileInView="visible"
@@ -66,7 +66,7 @@ function About() {
             visible: { opacity: 1 },
             hidden: { opacity: 0 },
           }}
-          className="text-base md:text-xl lg:text-2xl max-w-[100rem] mt-3 font-light"
+          className="text-base md:text-xl lg:text-2xl max-w-[100rem] mt-5 font-light"
         >
           who brewing pixel-perfect spells and conjuring captivating user
           experiences with a touch of code sorcer✨.
