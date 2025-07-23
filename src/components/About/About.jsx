@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import Resume from "../../assets/Darsh-Shah-2024.pdf";
+import Resume from "../../assets/Darsh-2025.pdf";
 import Header from "../Header/Header";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 
@@ -12,7 +12,7 @@ function About() {
     window.location.href = `mailto:contact.shahdarsh@gmail.com?subject=${subject}&body=${body}`;
   };
   const [text] = useTypewriter({
-    words: ["Web3, Research, Frontend🚀"],
+    words: ["Web3, Research, Frontend🚀.."],
     loop: 1,
     delaySpeed: 1000,
     typeSpeed: 150,
@@ -55,6 +55,9 @@ function About() {
             />
           </span>
         </motion.h1>
+        <h5 className="text-xl font-light md:text-lg lg:text-2xl mb-10 ">
+          Blockchain | Web3 | Crypto
+        </h5>
         <motion.p
           initial="hidden"
           whileInView="visible"
