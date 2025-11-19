@@ -12,7 +12,7 @@ function About() {
     window.location.href = `mailto:contact.shahdarsh@gmail.com?subject=${subject}&body=${body}`;
   };
   const [text] = useTypewriter({
-    words: ["Web3, Research, Frontend🚀.."],
+    words: ["Full Stack • Mobile • UI/UX • Web3 • Cloud🚀.."],
     loop: 1,
     delaySpeed: 1000,
     typeSpeed: 150,
