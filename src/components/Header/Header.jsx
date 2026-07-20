@@ -19,7 +19,7 @@ function Header() {
   const SendEmail = () => {
     var subject = "Let's Connect!";
     var body = "Hello,I'm [Your Name]!,would love to have chat with you!";
-    window.location.href = `mailto:contact.shahdarsh@gmail.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:work.darsh@outlook.com?subject=${subject}&body=${body}`;
   };
   return (
     <header className="headerMainBox ">
