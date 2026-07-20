@@ -5,27 +5,28 @@ import HealthX from "../../assets/HealthXDashboard.png";
 import Blockexlorer from "../../assets/blockexplorer.png";
 import EduLink from "../../assets/EduLink.jpg";
 import ResearchPaper from "../../assets/cover.png";
-import PostPilotLogo from "../../assets/contentDeck.jpg";
+import PostPilotLogo from "../../assets/Autark-AI.png";
 
 function Projects() {
   const MY_PROJECTS = [
     {
       id: 6,
-      name: "ContentDock – AI Auto Blog & LinkedIn Poster SaaS(WIP)",
+      name: "Privacy First AI system - Autark-AI , Android | IOS",
       skills: [
-        "TypeScript",
-        "React",
-        "Next.js",
-        "Node.js",
+        "Android IPC (AIDL, Intents, Bound Services)",
+        "On-Device AI / Edge AI",
+        "Rust",
+        "Kotlin",
         "AI Integration",
-        "Prompt Engineering",
+        "TensorFlow Lite (TFLite)",
         "Backend Architecture",
-        "SaaS Development",
+        "Semantic Search",
       ],
-      link: "https://github.com/darsh-shahx", // replace with live demo once ready
-      gitlink: "https://github.com/darsh-shahx",
+      link: "https://github.com/prasanna12510/Autark-AI/tree/main/Darsh%20Shah", // replace with live demo once ready
+      gitlink:
+        "https://github.com/prasanna12510/Autark-AI/tree/main/Darsh%20Shah",
       logo: PostPilotLogo,
-      dec: "PostPilot is an AI-powered SaaS platform that researches topics, generates high-quality blog and LinkedIn content, and automates post scheduling. Designed to streamline content workflows using AI and clean backend architecture.",
+      dec: "Building an end-to-end offline AI platform for Android featuring local LLM inference, semantic retrieval, and modular SDK components while researching mobile IPC architectures and on-device AI deployment.",
     },
     {
       id: 5,
@@ -44,7 +45,7 @@ function Projects() {
     },
     {
       id: 4,
-      name: "EduLink",
+      name: "EdBucks",
       skills: [
         "React",
         "Solidity",

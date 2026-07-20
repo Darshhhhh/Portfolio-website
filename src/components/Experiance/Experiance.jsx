@@ -3,8 +3,20 @@ import { motion } from "framer-motion";
 function Experiance() {
 const MY_EXP = [
   {
+    cmpName: "George Brown College",
+    position: "Software Engineer - AI",
+    duration: "Aug 2025 – Dec 2025",
+    timeDiff: "4 mos",
+    type: "Co-Op",
+    cmt: [
+      "Built an offline LLM bridge for Android system using a Termux-hosted Ollama model and a file-based IPC workflow",
+      "•Researched and developed an on-device RAG stack using TFLite embeddings, cosine search, and an MLC-LLM Vulkan-accelerated Phi-3 Mini model",
+      "Designing a modular SDK enabling vector search, namespaces, and document ingestion- Conducted iOS/Android IPC feasibility analysis (AIDL, Intents, URL Schemes) to guide architecture within sandbox limits",
+    ],
+  },
+  {
     cmpName: "Aurkei Inc.",
-    position: "Software Engineer",
+    position: "Software Engineer - Blockchain",
     duration: "May 2024 – Aug 2024",
     timeDiff: "4 mos",
     type: "Co-Op",

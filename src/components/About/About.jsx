@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import Resume from "../../assets/Resume-Darsh-Shah.pdf";
+import Resume from "../../assets/Darsh_Shah_Resume.pdf";
 import Header from "../Header/Header";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 
@@ -9,7 +9,7 @@ function About() {
   const SendEmail = () => {
     var subject = "Let's Connect!";
     var body = "Hello,I'm [Your Name]!,would love to have chat with you!";
-    window.location.href = `mailto:contact.shahdarsh@gmail.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:work.darsh@outlook.com?subject=${subject}&body=${body}`;
   };
   const [text] = useTypewriter({
     words: ["Full Stack • Mobile • UI/UX • Web3 • Cloud🚀.."],
