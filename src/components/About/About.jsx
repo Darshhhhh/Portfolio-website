@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import Resume from "../../assets/Darsh-2025.pdf";
+import Resume from "../../assets/Resume-Darsh-Shah.pdf";
 import Header from "../Header/Header";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 
@@ -12,7 +12,7 @@ function About() {
     window.location.href = `mailto:contact.shahdarsh@gmail.com?subject=${subject}&body=${body}`;
   };
   const [text] = useTypewriter({
-    words: ["Engineer🚀.."],
+    words: ["Full Stack • Mobile • UI/UX • Web3 • Cloud🚀.."],
     loop: 1,
     delaySpeed: 1000,
     typeSpeed: 150,
@@ -38,10 +38,11 @@ function About() {
             visible: { opacity: 1 },
             hidden: { opacity: 0 },
           }}
-          className="text-5xl font-bold md:text-5xl lg:text-8xl mb-10 "
+          className="text-3xl font-bold md:text-3xl lg:text-7xl "
         >
-          <span className="underline decoration-yellow-200">Software </span>
-          <span className="purple-text">
+          Software Engineer |&nbsp;
+          {/* <span className="underline decoration-yellow-200">Web3 </span> */}
+          <span className="purple-text underline decoration-yellow-200">
             {text}
             <Cursor
               cursorColor={
@@ -54,9 +55,9 @@ function About() {
             />
           </span>
         </motion.h1>
-        <h5 className="text-xl font-light md:text-lg lg:text-2xl mb-10 ">
+        {/* <h5 className="text-xl font-light md:text-lg lg:text-2xl mb-10 ">
           Blockchain | Web3 | Crypto
-        </h5>
+        </h5> */}
         <motion.p
           initial="hidden"
           whileInView="visible"
@@ -65,7 +66,7 @@ function About() {
             visible: { opacity: 1 },
             hidden: { opacity: 0 },
           }}
-          className="text-base md:text-xl lg:text-2xl max-w-[100rem] mt-3 font-light"
+          className="text-base md:text-xl lg:text-2xl max-w-[100rem] mt-5 font-light"
         >
           who brewing pixel-perfect spells and conjuring captivating user
           experiences with a touch of code sorcer✨.

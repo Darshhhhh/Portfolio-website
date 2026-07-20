@@ -5,9 +5,28 @@ import HealthX from "../../assets/HealthXDashboard.png";
 import Blockexlorer from "../../assets/blockexplorer.png";
 import EduLink from "../../assets/EduLink.jpg";
 import ResearchPaper from "../../assets/cover.png";
+import PostPilotLogo from "../../assets/contentDeck.jpg";
 
 function Projects() {
   const MY_PROJECTS = [
+    {
+      id: 6,
+      name: "ContentDock – AI Auto Blog & LinkedIn Poster SaaS(WIP)",
+      skills: [
+        "TypeScript",
+        "React",
+        "Next.js",
+        "Node.js",
+        "AI Integration",
+        "Prompt Engineering",
+        "Backend Architecture",
+        "SaaS Development",
+      ],
+      link: "https://github.com/darsh-shahx", // replace with live demo once ready
+      gitlink: "https://github.com/darsh-shahx",
+      logo: PostPilotLogo,
+      dec: "PostPilot is an AI-powered SaaS platform that researches topics, generates high-quality blog and LinkedIn content, and automates post scheduling. Designed to streamline content workflows using AI and clean backend architecture.",
+    },
     {
       id: 5,
       name: "RWA Tokenization Research",
